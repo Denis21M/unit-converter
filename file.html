@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new_style.css">
+    <script src="file_script.js"></script>
+</head>
+<html>
+  <body>
+    <h1>One-Way Unit Converter</h1>
+    <h3>Convert Here:</h3>
+    <div class="boxes">
+      <input type="number" placeholder="Enter value..." id="in">
+      <select id="converter">
+        <option selected disabled>select unit</option>
+        <option value="CmToFt">centemters to foot</option>
+        <option value="CmToKm">centemeters to kilometer</option>
+        <option value="CmToMiles">centemeters to miles</option>
+        <option value="FtToCm">foot to centemeters</option>
+        <option value="FtToKm">foot to kilometer</option>
+        <option value="FtToMiles">foot to miles</option>
+        <option value="GramsToKg">grams to kilogram</option>
+        <option value="InchesToM">inches to meter</option>
+        <option value="KmToCm">kilometer to centemeters</option>
+        <option value="KmToFt">kilometer to foot</option>
+        <option value="KgToGrams">kilogram to grams</option>
+        <option value="KgToPounds">kilogram to pounds</option>
+        <option value="KmToMiles">kilometer to miles</option>
+        <option value="MilesToCm">miles to centemeters</option>
+        <option value="MilesToFt">miles to foot</option>
+        <option value="MilesToKm">miles to kilometer</option>
+        <option value="MToInches" >meter to inches</option>
+        <option value="PoundsToKg">pounds to kilogram</option>
+      </select>
+      <p id="result">Result: null</p>
+    </div>
+    <button onclick="convert()" id="button">convert</button>
+    <div id="helpd">
+        <a href="help.html"><span id="help">Get Help</span></a>
+        <a href="feedback.html"><span id="feedback">Feedback</span></a>
+    </div>
+</body>
+</html>
