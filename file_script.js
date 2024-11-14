@@ -82,3 +82,42 @@ function convert(){
     }
     document.getElementById("result").innerHTML = result;
 }
+
+
+function sendFeedback(event) {
+    event.preventDefault();
+
+    const feedback = document.getElementById("type1").value;
+    const thankYouMessage1 = document.getElementById("note1");
+
+    if (feedback.trim()) {  
+        thankYouMessage1.style.display = "block";
+        thankYouMessage1.innerHTML = "Thank you for your Feedback. Note: This web application is still work in progress and is updated accordingly, Kindly bear with us.";
+
+        console.log("User Feedback:", feedback);
+
+        // Clear the input field
+        document.getElementById("type1").value = '';
+    } else {
+        alert("Please enter your feedback before submitting.");
+    }
+}
+
+function sendHelp(event) {
+    event.preventDefault();
+
+    const request = document.getElementById("type2").value;
+    const thankYouMessage2 = document.getElementById("note2");
+
+    if (request.trim()) {  
+        thankYouMessage2.style.display = "block";
+        thankYouMessage2.innerHTML = "Thank you for reaching out. Note: This web application is still work in progress and is updated accordingly, Kindly bear with us.";
+
+        console.log("User request:", request);
+
+        // Clear the input field
+        document.getElementById("type2").value = '';
+    } else {
+        alert("Please enter your request before submitting.");
+    }
+}
