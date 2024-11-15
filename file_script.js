@@ -89,6 +89,7 @@ function sendFeedback(event) {
 
     const feedback = document.getElementById("type1").value;
     const thankYouMessage1 = document.getElementById("note1");
+    const  Viewer1 = document.getElementById("Viewer1");
 
     if (feedback.trim()) {  
         thankYouMessage1.style.display = "block";
@@ -96,7 +97,12 @@ function sendFeedback(event) {
 
         console.log("User Feedback:", feedback);
 
-        // Clear the input field
+    
+        if (Viewer1){
+            Viewer1.innerHTML = feedback;
+        }
+
+        
         document.getElementById("type1").value = '';
     } else {
         alert("Please enter your feedback before submitting.");
@@ -108,6 +114,7 @@ function sendHelp(event) {
 
     const request = document.getElementById("type2").value;
     const thankYouMessage2 = document.getElementById("note2");
+    const  Viewer2 = document.getElementById("Viewer2");
 
     if (request.trim()) {  
         thankYouMessage2.style.display = "block";
@@ -115,7 +122,12 @@ function sendHelp(event) {
 
         console.log("User request:", request);
 
-        // Clear the input field
+    
+        if (Viewer2){
+            Viewer2.innerHTML = request;
+        }
+
+       
         document.getElementById("type2").value = '';
     } else {
         alert("Please enter your request before submitting.");
