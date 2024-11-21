@@ -55,11 +55,6 @@ h1{
     padding: 10px;
   }
 
-  #button{
-    position: absolute;
-    right: 15px;
-  }
-
 #type1, #type2{
     padding: 50px;
     border-radius: 10px;
