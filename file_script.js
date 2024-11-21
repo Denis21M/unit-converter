@@ -2,7 +2,10 @@ function convert(){
     const inputedValue = document.getElementById("in").value;
     const selectedUnit = document.getElementById("converter").value;
 
-    let result = 0;
+    if (!inputedValue) {
+        alert("Please enter a value to convert");
+        return;}
+
     switch (selectedUnit){
 
     case "KmToMiles":
@@ -79,6 +82,7 @@ function convert(){
 
     default:
         result = "invalid conversion";
+
     }
     document.getElementById("result").innerHTML = result;
 }
@@ -93,13 +97,13 @@ function sendFeedback(event) {
 
     if (feedback.trim()) {  
         thankYouMessage1.style.display = "block";
-        thankYouMessage1.innerHTML = "Thank you for your Feedback. Note: This web application is still work in progress and is updated accordingly, Kindly bear with us.";
+        thankYouMessage1.innerHTML = "Thank you for your Feedback. Note: This web application is still work in progress thus unable to save your request in the server yet, for this reason, we will prefer you send the request via the Linkedln link below. Kindly bear with us.";
 
         console.log("User Feedback:", feedback);
 
     
         if (Viewer1){
-            Viewer1.innerHTML = feedback;
+            Viewer1.innerHTML = "Feedback:" +feedback;
         }
 
         
@@ -118,13 +122,13 @@ function sendHelp(event) {
 
     if (request.trim()) {  
         thankYouMessage2.style.display = "block";
-        thankYouMessage2.innerHTML = "Thank you for reaching out. Note: This web application is still work in progress and is updated accordingly, Kindly bear with us.";
+        thankYouMessage2.innerHTML = "Thank you for reaching out. Note: This web application is still work in progress thus unable to save your request in the server yet, for this reason, we will prefer you send the request via the Linkedln link below. Kindly bear with us.";
 
         console.log("User request:", request);
 
     
         if (Viewer2){
-            Viewer2.innerHTML = request;
+            Viewer2.innerHTML = "Request:" + request;
         }
 
        

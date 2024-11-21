@@ -52,11 +52,13 @@ h1{
     border: 0px;
     cursor: pointer;
     margin-left: 6px;
-    padding: 6px;
+    padding: 10px;
   }
 
-  #help, #feedback{
-    color: blue;
+  #button{
+    position: absolute;
+    right: 540px;
+    top: 340px;
   }
 
 #type1, #type2{
@@ -73,16 +75,6 @@ h1{
     color: green;
 }
 
-#home{
-    color: blue;
-    margin-left: 10px;
-}
-
-#help, #feedback{
-    color: blue;
-}
-
-
 textarea {
   width: 30%;
   height: 100px;
@@ -92,4 +84,23 @@ textarea {
   border: 1px solid #ccc;
   font-size: 16px;
   resize: vertical;
+}
+
+.main, .Page1, .Page2{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  color: blue;
+}
+
+.help-container, .feedback-container{
+  margin-left: 47px;
+}
+
+#header1, #header2{
+  margin-left: 50px;
+}
+
+#home, #help, #feedback, #linkedin{
+  text-decoration: none;
 }
