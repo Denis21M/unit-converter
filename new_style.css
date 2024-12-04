@@ -150,3 +150,9 @@ a{
   color: black;
 }
 
+@media (min-height: 450px) and (max-height: 3200){
+  .flex-container{
+    margin-top: 400px;
+  }
+}
+
