@@ -32,6 +32,7 @@ h1{
     text-align: center;
     background-color: white;
     cursor: pointer;
+    color: black;
   }
 
 #in, #result{
@@ -119,7 +120,7 @@ textarea {
   grid-area: flex-container;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: start;
   column-gap: 5px;
   margin-top: 800px;
   background-color: mediumslateblue;
@@ -148,5 +149,12 @@ textarea {
 a{
   text-decoration: none;
   color: black;
+}
+
+.container{
+  margin-top: 800px;
+  background-color: mediumslateblue;
+  padding: 10px;
+  border-radius: 5px;
 }
 
