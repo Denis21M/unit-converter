@@ -46,7 +46,7 @@ h1{
     background-color: white;
   }
 
-  #button, #send1, #send2{
+  #send1, #send2{
     background-color: greenyellow;
     text-align: justify;
     border-radius: 10px;
@@ -55,6 +55,17 @@ h1{
     cursor: pointer;
     margin-left: 6px;
     padding: 10px;
+  }
+
+  #button{
+    background-color: greenyellow;
+    text-align: justify;
+    border-radius: 10px;
+    margin-top: 25px;
+    border: 0px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 5px;
   }
 
 #type1, #type2{
@@ -165,7 +176,7 @@ a{
 
   .container{
     margin-top: 1300px;
-    padding: 20px;
+    padding: 30px;
   }
   
 }
