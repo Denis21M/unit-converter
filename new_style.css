@@ -172,11 +172,12 @@ a{
 @media (min-height: 250px) and (max-width: 1500px){
   .flex-container{
     margin-top: 300px;
+    padding: 6px;
   }
 
   .container{
     margin-top: 1300px;
-    padding: 30px;
+    padding: 20px;
   }
   
 }
