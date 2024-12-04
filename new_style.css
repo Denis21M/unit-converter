@@ -31,6 +31,7 @@ h1{
     padding-bottom: 3px;
     text-align: center;
     background-color: white;
+    cursor: pointer;
   }
 
 #in, #result{
@@ -53,11 +54,6 @@ h1{
     cursor: pointer;
     margin-left: 6px;
     padding: 10px;
-  }
-
-  #button{
-    position: absolute;
-    right: 15px;
   }
 
 #type1, #type2{
@@ -85,14 +81,60 @@ textarea {
   resize: vertical;
 }
 
-.main, .Page1, .Page2{
-  width: 6%;
-  height: 5%;
-  right: 3px;
-  position: absolute;
-  bottom: 5px;
-  color: blue;
-  display: inline;
+.linkedIn{
+  grid-area: linkedIn;
+}
+
+.Help{
+  grid-area: Help;
+}
+
+.feedback{
+  grid-area: feedback;
+}
+
+.Home{
+  grid-area: Home;
+}
+
+.header{
+  grid-area: header;
+}
+
+.boxes{
+  grid-area: boxes;
+}
+
+.click{
+  grid-area: click;
+  display: grid;
+  justify-items: end;
+}
+
+.converting{
+  grid-area: converting;
+}
+
+.flex-container{
+  grid-area: flex-container;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  column-gap: 5px;
+  margin-top: 800px;
+  background-color: mediumslateblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main{
+  display: grid;
+  grid-template: 
+  "header header header header"
+  "converting . . ."
+  "boxes boxes boxes boxes"
+  ". . . click"
+  "flex-container flex-container flex-container flex-container";
 }
 
 .help-container, .feedback-container{
@@ -103,6 +145,8 @@ textarea {
   margin-left: 50px;
 }
 
-#home, #help, #feedback, #linkedin{
+a{
   text-decoration: none;
+  color: black;
 }
+

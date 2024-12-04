@@ -7,9 +7,10 @@
 </head>
 <html>
   <body>
-    <h1>One-Way Unit Converter</h1>
-    <h3>Convert Here:</h3>
-    <div class="boxes">
+    <div class="main">
+    <div class="item header"><h1>One-Way Unit Converter</h1></div>
+    <div class="item converting"><h3>Convert Here:</h3></div>
+    <div class="item boxes">
       <input type="number" placeholder="Enter value..." id="in">
       <select id="converter">
         <option selected disabled>select unit</option>
@@ -35,12 +36,14 @@
       <p id="result">Result: null</p>
     </div>
 
-    <button onclick="convert()" id="button">convert</button>
+    <div class="item click"><button onclick="convert()" id="button">convert</button></div>
 
-    <div class="main">
-        <a href="http://www.linkedin.com/in/mmakogu" id="linkedin">linkedln</a>
-        <a href="help.html" id="help">Help</a>
-        <a href="feedback.html" id="feedback">Feedback</a>
+    <div class="item flex-container">
+        <a href="http://www.linkedin.com/in/mmakogu">linkedln</a>
+        <a href="help.html">Help</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+
     </div>
 
     <script src="file_script.js"></script>
