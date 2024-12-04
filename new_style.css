@@ -158,14 +158,14 @@ a{
   border-radius: 5px;
 }
 
-@media (min-height: 400px) and (max-width: 1500px){
+@media (min-height: 250px) and (max-width: 1500px){
   .flex-container{
     margin-top: 300px;
   }
 
   .container{
     margin-top: 1300px;
-    padding: 18px;
+    padding: 20px;
   }
   
 }
