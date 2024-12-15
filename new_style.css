@@ -1,7 +1,7 @@
 h1{
     text-align: center;
     background-color: mediumslateblue;
-    padding: 60px;
+    padding: 30px;
     font-size: 50px;
     border-radius: 10px;
     
@@ -187,6 +187,10 @@ a{
   .container{
     margin-top: 1300px;
     padding: 20px;
+  }
+
+  h{
+    padding: 10px;
   }
   
 }
