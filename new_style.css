@@ -57,7 +57,7 @@ h1{
     padding: 10px;
   }
 
-  #button{
+  #button, .refresh{
     background-color: greenyellow;
     text-align: justify;
     border-radius: 10px;
@@ -66,6 +66,15 @@ h1{
     cursor: pointer;
     padding: 10px;
     margin-right: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .refresh{
+    background-color: red;
+  }
+
+  button:hover{
+    transform: scale(1.05);
   }
 
 #type1, #type2{
