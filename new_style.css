@@ -148,6 +148,17 @@ textarea {
   border-radius: 5px;
 }
 
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  column-gap: 5px;
+  margin: 20px;
+  background-color: mediumslateblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .main{
   display: grid;
   grid-template: 
@@ -162,8 +173,8 @@ textarea {
   margin-left: 47px;
 }
 
-#header1, #header2{
-  margin-left: 50px;
+#header2{
+  margin-right: 650px;
 }
 
 a{
@@ -171,15 +182,22 @@ a{
   color: black;
 }
 
-@media (min-height: 250px) and (max-width: 1500px){
+@media (min-height: 250px) and (max-width: 1000px){
   .flex-container{
-    margin-top: 200px;
+    margin-top: 400px;
     padding: 6px;
   }
 
   h1{
     padding: 10px;
   }
+
+  #header2{
+    margin-right: 450px;
+
+  }
+
+
+}  
   
-}
 
