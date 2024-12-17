@@ -184,8 +184,9 @@ a{
 
 @media (min-height: 250px) and (max-width: 1000px){
   .flex-container{
-    margin-top: 400px;
+    margin-top: 385px;
     padding: 6px;
+    margin-bottom: 20px;
   }
 
   h1{
@@ -195,6 +196,10 @@ a{
   #header2{
     margin-right: 450px;
 
+  }
+
+  main{
+    max-height: 95vh;
   }
 
 
