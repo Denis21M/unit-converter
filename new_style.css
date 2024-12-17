@@ -4,6 +4,7 @@ h1{
     padding: 30px;
     font-size: 50px;
     border-radius: 10px;
+    margin-top: 20px;
     
   }
   h3{
@@ -199,7 +200,7 @@ a{
   }
 
   main{
-    max-height: 95vh;
+    max-height: 90vh;
   }
 
 
