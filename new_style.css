@@ -142,7 +142,7 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  column-gap: 5px;
+  gap: 5px;
   margin-top: 800px;
   background-color: mediumslateblue;
   padding: 10px;
@@ -152,12 +152,11 @@ textarea {
 .footer-container{
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  column-gap: 5px;
   margin: 20px;
   background-color: mediumslateblue;
   padding: 10px;
   border-radius: 5px;
+  justify-content: space-between;
 }
 
 .main{
@@ -172,10 +171,6 @@ textarea {
 
 .help-container, .feedback-container{
   margin-left: 47px;
-}
-
-#header2{
-  margin-right: 650px;
 }
 
 a{
